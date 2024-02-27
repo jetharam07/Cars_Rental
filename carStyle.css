@@ -1,0 +1,171 @@
+body{
+    background-color: rgb(212, 212, 241);
+}
+
+.container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center align container */
+    padding: 20px;
+}
+
+button {
+    /* Buttons will take remaining space */
+   background-color: rgb(8, 80, 104);
+   color: white;
+   font-size: 17px;
+   border: none;
+   font-weight: bold;
+   padding: 12px 12px;
+   margin-top: 20px;
+   margin-left: 20px;
+   border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row; /* Horizontal arrangement */
+    justify-content: space-between; /*Buttons on left, image on right*/
+}
+
+
+.image {
+    flex: 1; /* Image will take remaining space */
+    margin-left: 200px; /* Space between buttons and image */
+    margin-top: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image iframe {
+    max-width: 360px;
+    height: 250px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+    
+    .image {
+        margin-left: 0; /* Remove margin between buttons and image */
+        margin-top: 10px; /* Add space between buttons and image */
+    }
+}
+
+
+p{
+    
+    color: green;
+    font-size: 35px;
+    border: none;
+    font-weight: bold;
+    margin-top: 60px;
+    text-shadow: 2px;
+    
+}
+
+.content2{
+    background-color: black;
+    color: white;
+    margin-top: 70px;
+    padding: 10px 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+
+.availableCar {
+    color: rgb(168, 27, 114); 
+     margin-top: 30px;
+     text-align: center;
+    /* background-color: black; */
+}
+
+
+
+.container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+
+
+.container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.container3 {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.container4 {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.container5 {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.container6 {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+
+.left-content,
+.right-content {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
+}
+
+.left-content img,
+.right-content img {
+    max-width: 100%;
+}
+
+.left-content p,
+.right-content p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .left-content,
+    .right-content {
+        flex-basis: 100%;
+    }
+} 
